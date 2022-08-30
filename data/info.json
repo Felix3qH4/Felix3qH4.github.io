@@ -1,0 +1,489 @@
+BUS_INFO={
+    "K-Bus": {
+        "Commune": "Kehlen",
+        "Nom du Bus": "K-Bus",
+        "Couleur": "#00ffa6",
+        "Tel.": "8002 8282",
+        "Réservations": "minimum 1 heure en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la Commune de Kehlen",
+            "Capellen Gare",
+            "City Concorde Lifestyle Center",
+            "Shopping Center La Belle Etoile",
+            "CHL - Centre Strassen",
+            "CHL Eich",
+            "CHdN Ettelbruck",
+            "Hôpital Kirchberg",
+            "Rehazenter Kirchberg",
+            "ZithaKlinik"
+        ],
+        "Heures de circulation": {
+            "Lundi": "8:00-20:00",
+            "Mardi": "8:00-20:00",
+            "Mercredi": "8:00-20:00",
+            "Jeudi": "8:00-20:00",
+            "Vendredi": "8:00-20:00",
+            "Samedi": "8:00-20:00",
+            "Dimanche": "/",
+            "Sauf": "Jours de fériés"
+        },
+        "Heures de réservation": {
+            "Lundi": "7:00-18:00",
+            "Mardi": "7:00-18:00",
+            "Mercredi": "7:00-18:00",
+            "Jeudi": "7:00-18:00",
+            "Vendredi": "7:00-18:00",
+            "Samedi": "7:00-18:00",
+            "Dimanche": "/",
+            "Sauf":"Jours de fériés"
+        },
+        "Site": "https://www.kehlen.lu/vie-communale/mobilite/k-bus",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte.",
+            "Peut transporter des poussettes, chaises roulantes et déambulateurs"
+        ],
+        "Entreprise effectuant le transport": "Demy Schandeler"
+    },
+
+    "Ruffbus Mamer": {
+        "Commune": "Mamer",
+        "Nom du Bus": "Ruffbus Gemeng Mamer",
+        "Couleur": "#960096",
+        "Tel.": "2810 831",
+        "Réservations": "minimum 30 minutes et maximum 8 jours en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la commune de Mamer",
+            "Territoire de la commune de Steinfort",
+            "Territoire de la commune de Koerich",
+            "Territoire de la commune de Kehlen",
+            "Territoire de la commune de Kopstal",
+            "Territoire de la commune de Strassen",
+            "Territoire de la commune de Bertrange",
+            "Territoire de la commune de Dippach",
+            "Territoire de la commune de Garnich",
+            "Luxembourg, CHL",
+            "Luxembourg, Place de l'Étoile",
+            "Luxembourg, Zithaklinik",
+            "Luxembourg, Hôpital Kirchberg",
+            "Luxembourg, Clinique Bohler",
+            "Luxembourg, Rehazenter Kirchberg",
+            "Luxembourg, CHL Eich"
+        ],
+        "Heures de circulation": {
+            "Lundi": "8:00-20:00",
+            "Mardi": "8:00-20:00",
+            "Mercredi": "8:00-20:00",
+            "Jeudi": "8:00-20:00",
+            "Vendredi": "8:00-20:00",
+            "Samedi": "8:00-20:00",
+            "Dimanche": "8:00-20:00",
+            "Sauf": "Jours de fériés"
+        },
+        "Heures de réservation": {
+            "Lundi": "24/24",
+            "Mardi": "24/24",
+            "Mercredi": "24/24",
+            "Jeudi": "24/24",
+            "Vendredi": "24/24",
+            "Samedi": "24/24",
+            "Dimanche": "24/24",
+            "Sauf": "Jours de fériés"
+        },
+        "Site": "http://www.mamer.lu/wp-content/uploads/2022/01/Depl-Ruffbus-MAMER-1.pdf",
+        "Remarques": [
+            "Mineurs de moins de 13 ans doivent êtres accompagnés par un adulte.",
+            "Trajets gratuits pour enfants jusqu'à l'âge de 12 ans accomplis.",
+            "Peut transporter des poussettes et chaises roulantes."
+        ],
+        "Entreprise effectuant le transport": "Emile Weber"
+    },
+
+    "Bus@Stroossen": {
+        "Commune": "Strassen",
+        "Nom du Bus": "Bus @ Stroossen",
+        "Couleur": "#00FFFF",
+        "Tel.": "8002 14 14",
+        "Réservations": "minimum 45 minutes en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la Commune de Strassen",
+            "Gare Bertrange-Strassen",
+            "CHL Luxembourg",
+            "Belle-Etoile"
+        ],
+        "Heures de circulation": {
+            "Lundi": ["10:00-12:30", "13:30-18:00"],
+            "Mardi": ["10:00-12:30", "13:30-18:00"],
+            "Mercredi": ["10:00-12:30", "13:30-18:00"],
+            "Jeudi": ["10:00-12:30", "13:30-18:00"],
+            "Vendredi": ["10:00-12:30", "13:30-18:00"],
+            "Samedi": "10:00-16:30",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Heures de réservation": {
+            "Remarque": "Estimation faite avec les heures de circulation et le temps minimum qu'il faut réserver son trajet en avance!",
+            "Lundi": ["9:15-12:30", "13:30-18:00"],
+            "Mardi": ["9:15-12:30", "13:30-18:00"],
+            "Mercredi": ["9:15-12:30", "13:30-18:00"],
+            "Jeudi": ["9:15-12:30", "13:30-18:00"],
+            "Vendredi": ["9:15-12:30", "13:30-18:00"],
+            "Samedi": "9:15-16:30",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Site": "https://www.strassen.lu/media/600ea2ddd2433_depliant_bus-stroossen_web_25.01.2021.pdf",
+        "Remarques": [
+            "Mineurs de moins de 6 ans doivent êtres accompagnés par un adulte."
+        ],
+        "Entreprise effectuant le transport": "Inconnu"
+    },
+
+    "Ruffbus Berti": {
+        "Commune": "Bertrange",
+        "Nom du Bus": "Ruffbus Berti",
+        "Couleur": "#ff0000",
+        "Tel.": "8002 1717",
+        "Réservations": "minimum 1 heure en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la commune de Bertrange",
+            "Les Thermes Strassen"
+        ],
+        "Heures de circulation": {
+            "Lundi": "7:00-20:00",
+            "Mardi": "7:00-20:00",
+            "Mercredi": "7:00-20:00",
+            "Jeudi": "7:00-20:00",
+            "Vendredi": "7:00-01:00",
+            "Samedi": "7:00-01:00",
+            "Dimanche": "/",
+            "Sauf": "Jours de fériés"
+        },
+        "Heures de réservation": {
+            "Lundi": "7:00-20:00",
+            "Mardi": "7:00-20:00",
+            "Mercredi": "7:00-20:00",
+            "Jeudi": "7:00-20:00",
+            "Vendredi": "7:00-01:00",
+            "Samedi": "7:00-01:00",
+            "Dimanche": "/",
+            "Sauf": "Jours de fériés"
+        },
+        "Site": "https://www.bertrange.lu/mobilite-environnement/mobilite/ruffbus-berti",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte.",
+            "Les personnes à mobilité réduite sont priées de contacter le service ADAPTO."
+        ],
+        "Entreprise effectuant le transport": "Inconnu"
+    },
+
+    "KoBriBus": {
+        "Commune": "Kopstal",
+        "Nom du Bus": "KoBriBus",
+        "Couleur": "#0080FF",
+        "Tel.": "27 3 27 - 333",
+        "Réservations": "minimum 24 heures en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la commune de Kopstal",
+            "CHL Luxembourg"
+        ],
+        "Heures de circulation": {
+            "Lundi": "/",
+            "Mardi": "9:00-16:00",
+            "Mercredi": "/",
+            "Jeudi": "9:00-16:00",
+            "Vendredi": "/",
+            "Samedi": "9:00-16:00",
+            "Dimanche": "/",
+            "Sauf": "Jours de fériés"
+        },
+        "Heures de réservation": {
+            "Lundi": "7:00-18:00",
+            "Mardi": "7:00-18:00",
+            "Mercredi": "7:00-18:00",
+            "Jeudi": "7:00-18:00",
+            "Vendredi": "7:00-18:00",
+            "Samedi": "7:00-18:00",
+            "Dimanche": "/",
+            "Sauf":"Jours de fériés"
+        },
+        "Site": "http://www.kopstal.lu/mobilite/ruffbus-gemeng-koplescht/",
+        "Remarques": [
+            "Le KoBriBus est déstiné aux résidents de la commune de Kopstal âgées de 65 ans ou plus ainsi que toute personne à mobilité réduite!",
+            "Le KoBriBus dessert probablement plusieurs autres destinations pas indiquées ici!"
+        ],
+        "Entreprise effectuant le transport": "Inconnu"
+    },
+
+    "Proxibus": {
+        "Commune": ["Garnich", "Koerich", "Steinfort"],
+        "Nom du Bus": "Proxibus",
+        "Couleur": "#ffff00",
+        "Tel.": "8002 72 00",
+        "Réservations": "minimum 24 heures en avance",
+        "Prix": "2€ Adultes, 1€ enfants de 13 à 17 ans, gratuit pour enfants de 0 à 12 ans",
+        "Lieux de circulation": [
+            "Territoire de la commune de Garnich",
+            "Territoire de la commune de Koerich",
+            "Territoire de la commune de Steinfort",
+            "Arlon, Maison communale",
+            "Arlon, Gare",
+            "Capellen, toute la Route d'Arlon jusqu'au Rond-Point Motel",
+            "Capellen, Parc d'Activités",
+            "Capellen, Gare",
+            "Clemency, Église",
+            "Dippach Gare"
+        ],
+        "Heures de circulation": {
+            "Lundi": "7:00-19:00",
+            "Mardi": "7:00-19:00",
+            "Mercredi": "7:00-19:00",
+            "Jeudi": "7:00-19:00",
+            "Vendredi": "7:00-19:00",
+            "Samedi": "9:00-19:00",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Heures de réservation": {
+            "Lundi": "9:00-19:00",
+            "Mardi": "9:00-19:00",
+            "Mercredi": "9:00-19:00",
+            "Jeudi": "9:00-19:00",
+            "Vendredi": "9:00-19:00",
+            "Samedi": "9:00-19:00",
+            "Dimanche": "/",
+            "Sauf":"Inconnu"
+        },
+        "Site": "https://www.steinfort.lu/mobilite-et-environnement/transport-public/proxibus?v32",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte.",
+            "Peut transporter des poussettes, chaises roulantes et déambulateurs."
+        ],
+        "Entreprise effectuant le transport": "Inconnu"
+    },
+
+    "Bummelbus": {
+        "Commune": "Association de plusieurs communes",
+        "Nom du Bus": "Bummelbus",
+        "Couleur": "#ff9600",
+        "Tel.": "26 80 35 80",
+        "Réservations": "possibles jusqu'à la dernière minute",
+        "Prix": [
+            "< 10km : Adulte: 2€ , Enfant: 1,50€",
+            "10-20km : Adulte: 2,50€ , Enfant: 2€",
+            "20-25km : Adulte: 3,50€ , Enfant: 3€",
+            "25-35km : Adulte: 6,50€ , Enfant: 6€"
+        ],
+        "Lieux de circulation": [
+            "Helperknapp",
+            "Beckerich",
+            "Ell",
+            "Redange",
+            "Useldange",
+            "Bissen",
+            "Colmar-Berg",
+            "Nommern",
+            "Larochette",
+            "Fischbach",
+            "Heffingen",
+            "Waldbillig",
+            "Berdorf",
+            "Beaufort",
+            "Vallée de l'Ernz",
+            "Schieren",
+            "Vichten",
+            "Preizerdaul",
+            "Rambrouch",
+            "Wahl",
+            "Grosbous",
+            "Mertzig",
+            "Ettelbruck",
+            "Diekirch",
+            "Bettendorf",
+            "Reisdorf",
+            "Tandel",
+            "Erpeldange-sur-Sûre",
+            "Feulen",
+            "Esch-sur-Sûre",
+            "Boulaide",
+            "Lac Haute-Sûre",
+            "Goesdorf",
+            "Bourscheid",
+            "Putscheid",
+            "Vianden",
+            "Parc Hosingen",
+            "Kiischpelt",
+            "Eschweiler",
+            "Winseler",
+            "Wincrange",
+            "Clervaux",
+            "Weiswampach",
+            "Wiltz",
+            "Kehlen",
+            "Habscht",
+            "Saeul",
+            "Mersch",
+            "Lintgen",
+            "Lorentzweiler",
+            "Junglinster",
+            "Bech",
+            "Consdorf",
+            "Echternach"
+        ],
+        "Heures de circulation": {
+            "Lundi": "6:10-21:50",
+            "Mardi": "6:10-21:50",
+            "Mercredi": "6:10-21:50",
+            "Jeudi": "6:10-21:50",
+            "Vendredi": "6:10-21:50",
+            "Samedi": "8:10-16:20",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Heures de réservation": {
+            "Lundi": "6:00-22:00",
+            "Mardi": "6:00-22:00",
+            "Mercredi": "6:00-22:00",
+            "Jeudi": "6:00-22:00",
+            "Vendredi": "6:00-22:00",
+            "Samedi": "8:00-16:30",
+            "Dimanche": "/",
+            "Sauf":"Inconnu"
+        },
+        "Site": "Bummelbus.lu",
+        "Remarques": [
+            "Utilisation de l'application mobile recommandée.",
+            "Demandent nom, prénom, date de naissance, adresse du domicile, numéro du téléphone portable, adresse e-mail et autres éventuellement informations.",
+            "Hormis personnes en chaise roulante.",
+            "Horaires de circulation indiquent l'heure à laquelle le bus quitte le dépôt. Les horaires de la première prise en charge ainsi que de la dernière dépose peuvent donc varier."
+        ],
+        "Entreprise effectuant le transport": "Inconnu"
+    },
+
+    "Walfy Flexibus": {
+        "Commune": "Walferdange",
+        "Nom du Bus": "Walfy Flexibus",
+        "Couleur": "#FF0080",
+        "Tel.": "8002 20 20",
+        "Réservations": "minimum 45 minutes en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la commune de Walferdange",
+        ],
+        "Heures de circulation": {
+            "Lundi": "7:00-19:00",
+            "Mardi": "7:00-19:00",
+            "Mercredi": "7:00-19:00",
+            "Jeudi": "7:00-19:00",
+            "Vendredi": "7:00-19:00",
+            "Samedi": "9:00-19:00",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Heures de réservation": {
+            "Lundi": "6:00-20:00",
+            "Mardi": "6:00-20:00",
+            "Mercredi": "6:00-20:00",
+            "Jeudi": "6:00-20:00",
+            "Vendredi": "6:00-20:00",
+            "Samedi": "6:00-20:00",
+            "Dimanche": "/",
+            "Sauf":"Inconnu"
+        },
+        "Site": "https://www.sales-lentz.lu/wp-content/uploads/2020/11/2020_03_SLA_DEPLIANT_FLEXIBUS_WALFER2.pdf",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte."
+        ],
+        "Entreprise effectuant le transport": "Sales Lentz"
+    },
+
+    "Ruffbus Steesel": {
+        "Commune": "Steinsel",
+        "Nom du Bus": "Ruffbus Steesel",
+        "Couleur": "#FFFF00",
+        "Tel.": "28 108 - 43",
+        "Réservations": "minimum 30 minutes en avance",
+        "Prix": "0€",
+        "Lieux de circulation": [
+            "Territoire de la commune de Steinsel",
+            "Walferdange, PIDAL"
+        ],
+        "Heures de circulation": {
+            "Lundi": "9:00-17:00",
+            "Mardi": "9:00-17:00",
+            "Mercredi": "9:00-17:00",
+            "Jeudi": "9:00-17:00",
+            "Vendredi": "9:00-17:00",
+            "Samedi": "9:00-13:00",
+            "Dimanche": "/",
+            "Sauf": "Inconnu"
+        },
+        "Heures de réservation": {
+            "Lundi": "8:30-17:00",
+            "Mardi": "8:30-17:00",
+            "Mercredi": "8:30-17:00",
+            "Jeudi": "8:30-17:00",
+            "Vendredi": "8:30-17:00",
+            "Samedi": "8:30-13:00",
+            "Dimanche": "/",
+            "Sauf":"Inconnu",
+            "ATTENTION": "Heures calculées à base des heures de circulation et des 30 minutes de réservation en avance! (Peuvent être fausses)"
+        },
+        "Site": "https://www.steinsel.lu/wp-content/uploads/2022/06/ruffbus-steesel_flyer.pdf",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte.",
+            "Peut accomoder des chaises roulantes et poussettes."
+        ],
+        "Entreprise effectuant le transport": "Emile Weber"
+    },
+
+    "Frisibus": {
+        "Commune": "Frisange, Weiler-la-Tour",
+        "Nom du Bus": "Frisibus/Weilibus",
+        "Couleur": "#FFFF00",
+        "Tel.": "28 108 - 32",
+        "Réservations": "minimum 30 minutes en avance",
+        "Prix": "2€ (gratuit pour enfants de moins de 6 ans)",
+        "Lieux de circulation": [
+            "Territoire de la commune de Frisange",
+            "Weiler-la-Tour arrêt Geltz",
+            "Dudelange, arrêt Gemeng",
+            "Dalheim, centre médical",
+            "Remich, maison de retraite Jousefshaus",
+            "Remich, Moselle",
+            "Mondorf",
+            "Bettembourg"
+        ],
+        "Heures de circulation": {
+            "Lundi": "8:00-17:00",
+            "Mardi": "8:00-17:00",
+            "Mercredi": "8:00-17:00",
+            "Jeudi": "8:00-17:00",
+            "Vendredi": "8:00-17:00",
+            "Samedi": "/",
+            "Dimanche": "/",
+            "Sauf": "Jours fériés"
+        },
+        "Heures de réservation": {
+            "Lundi": "7:30-17:00",
+            "Mardi": "7:30-17:00",
+            "Mercredi": "7:30-17:00",
+            "Jeudi": "7:30-17:00",
+            "Vendredi": "7:30-17:00",
+            "Samedi": "/",
+            "Dimanche": "/",
+            "Sauf":"Jours fériés",
+            "ATTENTION": "Heures calculées à base des heures de circulation et des 30 minutes de réservation en avance! (Peuvent être fausses)"
+        },
+        "Site": "https://frisange.lu/vivre-a-frisange/mobilite/frisibus/",
+        "Remarques": [
+            "Mineurs de moins de 12 ans doivent êtres accompagnés par un adulte.",
+            "Peut accomoder des chaises roulantes et poussettes."
+        ],
+        "Entreprise effectuant le transport": "Emile Weber"
+    }
+}
