@@ -257,6 +257,9 @@ function search_connections() {
         url = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + address + ".json?types=place%2Cpostcode%2Caddress&access_token=pk.eyJ1IjoiM3FoNCIsImEiOiJja3NqYW53NXQxc2l2Mm5vZmF0cGVydnYxIn0.TF0GeHY58O9gdLTT88Sb0g"
         let response = await fetch(url);
         let data = await response.json();
+        
+        console.log("LOOKUP_ADDRESS [RESPONSE]:");
+        console.log(data);
 
         return data
     };
