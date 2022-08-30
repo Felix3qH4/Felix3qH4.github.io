@@ -13,7 +13,7 @@ Anyone willing to contribute to this project is welcome.
 <b><a href="./site.html">View the map</a></b>
 <br>
 <br>
-<input type="button" style="font-size:large" onclick="./site.html" value="View the map"></input>
+<input type="button" style="font-size:large" onclick="./site.html" value="View the map">
 <br>
 <br>
 # What is not working yet
