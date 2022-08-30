@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+        <script src="https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <div class="window">
+            <div class="left-map">
+                <div id="map"></div>
+            </div>
+
+
+            <div class="right-journey-box">
+                
+                <div class="journey-box-menu">
+                    <input type="button" class="journey-box-menu-button-selected button-left" value="Itinéraire" onclick="journey_box_menu_button(1)"></input>
+                    <input type="button" class="journey-box-menu-button" value="Liste des bus" onclick="journey_box_menu_button(2)"></input>
+                </div>
+				<div class="journey-box-itinary" id="journey-box-itinary">
+                    <div class="journey-box-input">
+
+                        <div class="journey-box-input-top">
+                            <i class="fa-regular fa-circle journey-box-icon"></i>
+                            <input type="text" class="journey-box-text-input" id="Input-Starting-Point" value="39, avenue Grand-Duc Jean Olm" placeholder="Départ"></input>
+                        </div>
+
+                        <div class="journey-box-input-center">
+                            <i class="fa-solid fa-ellipsis-vertical journey-box-icon journey-box-icon-dots"></i>
+                        </div>
+
+                        <div class="journey-box-input-bottom">
+                            <i class="fa-solid fa-location-dot journey-box-icon"></i>
+                            <input type="text" class="journey-box-text-input" id="Input-Destination-Point" value="13, rue de Meispelt Keispelt" placeholder="Destination"></input>
+                        </div>
+
+                        <div class="journey-box-input-departuretime">
+                            <p class="journey-box-input-time-date-text">Date et heure d'Arrivée:</p>
+                            <input type="datetime-local" class="journey-box-input-time-date" id="Input-Arrival-Date-Time"></input>
+                        </div>
+
+                        <div class="journey-box-search-journey">
+                            <input type="button" class="journey-box-search-button" value="Chercher" onclick="search_connections()"></input>
+                        </div>
+
+                    </div>
+
+                    <div class="journey-box-output" id="journey-box-output-container">
+						<div id="mbar"></div>
+
+                        <details class="journey-box-collapser" id="journey-box-collapser-1">
+                            <summary class="journey-box-collapser-title">Trajet 1:</summary>
+                            <div class="journey-box-output-box" id="journey-box-output-1">
+                                <details class="journey-box-output" id="journey-box-output-box-1">
+                                    <summary id="Bus-Name-1"></summary>
+                                    <div class="journey-box-output" id="Municipality-Name-1"></div>
+                                    <div class="journey-box-output" id="Phone-Number-1"></div>
+                                    <div class="journey-box-output" id="Reservation-1"></div>
+                                    <div class="journey-box-output" id="Price-1"></div>
+                                    <div class="journey-box-output" id="Website-1"></div>
+                                    <div class="journey-box-output" id="Driving-Hours-1"></div>
+                                    <div class="journey-box-output" id="Reservation-Hours-1"></div>
+                                    <div class="journey-box-output" id="Driving-Places-1"></div>
+                                    <div class="journey-box-output" id="Notices-1"></div>
+                                    <div class="journey-box-output" id="Enterprise-1"></div>
+                                </details>
+                            </div>
+                        </details>
+
+						<details class="journey-box-collapser" id="journey-box-collapser-2">
+							<summary class="journey-box-collapser-title">Trajet 2:</summary>
+							<div class="journey-box-output-box" id="journey-box-output-2">
+								<details class="journey-box-output"  id="journey-box-output-box-2">
+									<summary id="Bus-Name-2"></summary>
+									<div class="journey-box-output" id="Municipality-Name-2"></div>
+									<div class="journey-box-output" id="Phone-Number-2"></div>
+									<div class="journey-box-output" id="Reservation-2"></div>
+									<div class="journey-box-output" id="Price-2"></div>
+									<div class="journey-box-output" id="Website-2"></div>
+									<div class="journey-box-output" id="Driving-Hours-2"></div>
+									<div class="journey-box-output" id="Reservation-Hours-2"></div>
+									<div class="journey-box-output" id="Driving-Places-2"></div>
+									<div class="journey-box-output" id="Notices-2"></div>
+									<div class="journey-box-output" id="Enterprise-2"></div>
+								</details>
+							</div>
+						</details>
+
+						<details class="journey-box-collapser" id="journey-box-collapser-3">
+							<summary class="journey-box-collapser-title">Trajet 3:</summary>
+							<div class="journey-box-output-box" id="journey-box-output-3">
+								<details class="journey-box-output"  id="journey-box-output-box-3">
+									<summary id="Bus-Name-3"></summary>
+									<div class="journey-box-output" id="Municipality-Name-3"></div>
+									<div class="journey-box-output" id="Phone-Number-3"></div>
+									<div class="journey-box-output" id="Reservation-3"></div>
+									<div class="journey-box-output" id="Price-3"></div>
+									<div class="journey-box-output" id="Website-3"></div>
+									<div class="journey-box-output" id="Driving-Hours-3"></div>
+									<div class="journey-box-output" id="Reservation-Hours-3"></div>
+									<div class="journey-box-output" id="Driving-Places-3"></div>
+									<div class="journey-box-output" id="Notices-3"></div>
+									<div class="journey-box-output" id="Enterprise-3"></div>
+								</details>
+							</div>
+						</details>
+
+						<details class="journey-box-collapser" id="journey-box-collapser-4">
+							<summary class="journey-box-collapser-title">Trajet 4:</summary>
+							<div class="journey-box-output-box" id="journey-box-output-4">
+								<details class="journey-box-output"  id="journey-box-output-box-4">
+									<summary id="Bus-Name-4"></summary>
+									<div class="journey-box-output" id="Municipality-Name-4"></div>
+									<div class="journey-box-output" id="Phone-Number-4"></div>
+									<div class="journey-box-output" id="Reservation-4"></div>
+									<div class="journey-box-output" id="Price-4"></div>
+									<div class="journey-box-output" id="Website-4"></div>
+									<div class="journey-box-output" id="Driving-Hours-4"></div>
+									<div class="journey-box-output" id="Reservation-Hours-4"></div>
+									<div class="journey-box-output" id="Driving-Places-4"></div>
+									<div class="journey-box-output" id="Notices-4"></div>
+									<div class="journey-box-output" id="Enterprise-4"></div>
+								</details>
+							</div>
+						</details>
+
+						<details class="journey-box-collapser" id="journey-box-collapser-5">
+							<summary class="journey-box-collapser-title">Trajet 5:</summary>
+							<div class="journey-box-output-box" id="journey-box-output-5">
+								<details class="journey-box-output"  id="journey-box-output-box-5">
+									<summary id="Bus-Name-5"></summary>
+									<div class="journey-box-output" id="Municipality-Name-5"></div>
+									<div class="journey-box-output" id="Phone-Number-5"></div>
+									<div class="journey-box-output" id="Reservation-5"></div>
+									<div class="journey-box-output" id="Price-5"></div>
+									<div class="journey-box-output" id="Website-5"></div>
+									<div class="journey-box-output" id="Driving-Hours-5"></div>
+									<div class="journey-box-output" id="Reservation-Hours-5"></div>
+									<div class="journey-box-output" id="Driving-Places-5"></div>
+									<div class="journey-box-output" id="Notices-5"></div>
+									<div class="journey-box-output" id="Enterprise-5"></div>
+								</details>
+							</div>
+						</details>
+						<details class="journey-box-collapser" id="journey-box-collapser-6">
+							<summary class="journey-box-collapser-title">Trajet 6:</summary>
+							<div class="journey-box-output-box" id="journey-box-output-6">
+								<details class="journey-box-output"  id="journey-box-output-box-6">
+									<summary id="Bus-Name-6"></summary>
+									<div class="journey-box-output" id="Municipality-Name-6"></div>
+									<div class="journey-box-output" id="Phone-Number-6"></div>
+									<div class="journey-box-output" id="Reservation-6"></div>
+									<div class="journey-box-output" id="Price-6"></div>
+									<div class="journey-box-output" id="Website-6"></div>
+									<div class="journey-box-output" id="Driving-Hours-6"></div>
+									<div class="journey-box-output" id="Reservation-Hours-6"></div>
+									<div class="journey-box-output" id="Driving-Places-6"></div>
+									<div class="journey-box-output" id="Notices-6"></div>
+									<div class="journey-box-output" id="Enterprise-6"></div>
+								</details>
+							</div>
+						</details>
+					</div>
+				</div>
+
+				<div class="journey-box-bus-list" id="journey-box-bus-list">
+
+				</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Load geoJSON data -->
+        <script src="./data/Busses/ready/Bus_at_Stroossen.geojson"></script>
+        <script src="./data/Busses/ready/K_Bus.geojson"></script>
+        <script src="./data/Busses/ready/KoBriBus.geojson"></script>
+        <script src="./data/Busses/ready/Proxibus.geojson"></script>
+        <script src="./data/Busses/ready/Ruffbus_Berti.geojson"></script>
+        <script src="./data/Busses/ready/Ruffbus_Mamer.geojson"></script>
+		<script src="./data/Busses/ready/Bummelbus.geojson"></script>
+		<script src="./data/Busses/ready/Walfy_Flexibus.geojson"></script>
+		<script src="./data/Busses/ready/Ruffbus_Steesel.geojson"></script>
+		<script src="./data/Busses/ready/Frisibus.geojson"></script>
+
+        <script src="./data/info.json"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
