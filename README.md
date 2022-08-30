@@ -10,7 +10,7 @@ The project shall not be used for commercial purposes except with explicit permi
 If you are an entity listed in the project and want yourself to be removed from it, please contact the author.
 
 Anyone willing to contribute to this project is welcome.
-
+<b><a href="./site.html">View the map</a></b>
 <br>
 <br>
 <input type="button" style="font-size:large" onclick="./site.html" value="View the map"></input>
