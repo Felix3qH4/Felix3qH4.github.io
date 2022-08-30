@@ -14,6 +14,7 @@ Anyone willing to contribute to this project is welcome.
 <br>
 <b><a href="./site.html">View the map</a></b>
 <br>
+<b><a href="https://github.com/Felix3qH4/Felix3qH4.github.io">View the code</a></b>
 <br>
 # What is not working yet
 <ul>
