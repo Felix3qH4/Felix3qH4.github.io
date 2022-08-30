@@ -12,6 +12,15 @@ If you are an entity listed in the project and want yourself to be removed from 
 Anyone willing to contribute to this project is welcome.
 
 <b><a href="./site.html">View the Map</a></b>
-<input type="button" style="font-size:large" onclick="./site.html" value="View the map">
+<input type="button" style="font-size:large" onclick="./site.html" value="View the map"></input>
+<br>
+<br>
+# What is not working yet
+<ul>
+  <li>Missing data for some municipalities</li>
+  <li>Arrival time is not implemented</li>
+  <li>Showing a list with all the busses is not implemented</li>
+</ul>
+<br>
 <b>v1.0</b>
 
