@@ -11,7 +11,8 @@ If you are an entity listed in the project and want yourself to be removed from 
 
 Anyone willing to contribute to this project is welcome.
 
-<b><a href="./site.html">View the Map</a></b>
+<br>
+<br>
 <input type="button" style="font-size:large" onclick="./site.html" value="View the map"></input>
 <br>
 <br>
